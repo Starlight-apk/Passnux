@@ -37,6 +37,30 @@ Passnux 是一个运行在 **ARM64 Linux** 架构上的 AI 公益服务平台。
 - **Node.js**: >= 18
 - **内存**: >= 2GB（推荐 4GB+）
 
+## 📁 项目结构
+
+```
+Passnux/
+├── README.md           # 项目简介
+├── LICENSE             # MIT 许可证
+├── docs/               # 📘 开发文档
+│   ├── index.md
+│   ├── architecture/   # 架构设计
+│   ├── development/    # 开发指南
+│   ├── api/            # API 文档
+│   └── deployment/     # 部署运维
+└── wiki/               # 📗 用户文档
+    ├── index.md
+    ├── quickstart/     # 快速入门
+    ├── features/       # 功能介绍
+    └── faq/            # 常见问题
+```
+
+## 📖 文档导航
+
+- 👨‍💻 **开发者** → 查看 [开发文档](docs/index.md)
+- 👤 **用户** → 查看 [用户指南](wiki/index.md)
+
 ## 🚀 快速开始
 
 > 施工中，敬请期待...
@@ -52,6 +76,7 @@ Passnux 是一个运行在 **ARM64 Linux** 架构上的 AI 公益服务平台。
 ## 📬 联系我们
 
 - 项目主页：https://github.com/Starlight-apk/Passnux
+- 代码仓库：https://gitee.com/starlight-apk/Passnux
 
 ---
 

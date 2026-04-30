@@ -1,0 +1,56 @@
+# 模型调用接口
+
+## AI 对话
+
+```
+POST /v1/chat/completions
+```
+
+**请求头：**
+```
+Authorization: Bearer <token>
+Content-Type: application/json
+```
+
+**请求体：**
+```json
+{
+  "model": "deepseek-chat",
+  "messages": [
+    {"role": "user", "content": "你好"}
+  ],
+  "stream": false
+}
+```
+
+**响应：**
+```json
+{
+  "code": 0,
+  "data": {
+    "id": "chat-xxxx",
+    "model": "deepseek-chat",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "你好！有什么可以帮助你的吗？"
+        }
+      }
+    ]
+  }
+}
+```
+
+## 支持模型
+
+| 模型 | 说明 |
+| :--- | :--- |
+| `deepseek-chat` | DeepSeek 对话模型 |
+| `gpt-3.5-turbo` | OpenAI GPT-3.5 |
+| `qwen-turbo` | 通义千问 |
+
+## 流式输出
+
+设置 `stream: true` 即可启用 SSE 流式输出。
