@@ -12,8 +12,8 @@
 | `REDIS_URL` | Redis connection | `redis://localhost:6379` |
 | `JWT_SECRET` | JWT secret key | (Required) |
 | `JWT_EXPIRES` | Token expiration time | `86400` |
-| `AI_API_KEY` | AI model API key | (Required) |
-| `AI_BASE_URL` | AI model API base URL | `https://api.deepseek.com` |
+| `NEW_API_BASE_URL` | new-api upstream address | `http://localhost:3000` |
+| `NEW_API_KEY` | new-api admin key | (Required) |
 | `LOG_LEVEL` | Log level | `INFO` |
 
 ## Configuration File
@@ -24,5 +24,6 @@ Create a `.env` file:
 APP_ENV=production
 APP_PORT=8000
 JWT_SECRET=your-secret-key
-AI_API_KEY=sk-your-api-key
+NEW_API_BASE_URL=http://localhost:3000
+NEW_API_KEY=sk-your-new-api-key
 ```

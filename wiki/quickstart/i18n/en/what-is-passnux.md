@@ -2,14 +2,15 @@
 
 # What is Passnux?
 
-Passnux is a **free** AI public welfare service platform.
+Passnux is a **free** AI public welfare service platform, built on the [new-api](https://github.com/Calcium-Ion/new-api) upstream gateway.
 
 ## Core Features
 
 - **Completely Free** — No payment required, register and use
-- **Multi-Model Support** — Integrates multiple mainstream AI models
+- **Multi-Model Support** — Integrates multiple mainstream AI models via new-api
 - **ARM64 Optimized** — Runs smoothly on domestic devices
 - **Privacy & Security** — Encrypted conversation data transmission
+- **Reliable** — new-api provides load balancing for service availability
 
 ## Target Audience
 

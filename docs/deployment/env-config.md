@@ -12,8 +12,8 @@
 | `REDIS_URL` | Redis 连接 | `redis://localhost:6379` |
 | `JWT_SECRET` | JWT 密钥 | （必填） |
 | `JWT_EXPIRES` | Token 过期时间 | `86400` |
-| `AI_API_KEY` | AI 模型 API 密钥 | （必填） |
-| `AI_BASE_URL` | AI 模型 API 地址 | `https://api.deepseek.com` |
+| `NEW_API_BASE_URL` | new-api 上游地址 | `http://localhost:3000` |
+| `NEW_API_KEY` | new-api 管理密钥 | （必填） |
 | `LOG_LEVEL` | 日志级别 | `INFO` |
 
 ## 配置文件
@@ -24,4 +24,6 @@
 APP_ENV=production
 APP_PORT=8000
 JWT_SECRET=your-secret-key
-AI_API_KEY=sk-your-api-key
+NEW_API_BASE_URL=http://localhost:3000
+NEW_API_KEY=sk-your-new-api-key
+```

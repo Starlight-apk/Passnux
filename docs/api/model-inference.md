@@ -47,11 +47,17 @@ Content-Type: application/json
 
 ## 支持模型
 
+模型由上游 [new-api](https://gitcode.com/QuantumNous/new-api) 网关统一管理，支持包括但不限于以下模型：
+
 | 模型 | 说明 |
 | :--- | :--- |
 | `deepseek-chat` | DeepSeek 对话模型 |
 | `gpt-3.5-turbo` | OpenAI GPT-3.5 |
+| `gpt-4o` | OpenAI GPT-4o |
 | `qwen-turbo` | 通义千问 |
+| `claude-3-haiku` | Anthropic Claude 3 |
+
+> 💡 实际可用模型列表以 new-api 管理后台配置为准，可通过 `GET /models` 接口获取实时列表。
 
 ## 流式输出
 

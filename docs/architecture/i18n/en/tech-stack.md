@@ -24,6 +24,11 @@
 | Primary DB | TBD | Considering PostgreSQL |
 | Cache | TBD | Considering Redis |
 
+### AI Gateway
+| Option | Status | Description |
+| :--- | :--- | :--- |
+| Upstream Gateway | ✅ Confirmed | [new-api](https://github.com/Calcium-Ion/new-api) — Multi-model aggregation, load balancing, key management, quota control |
+
 ## ARM64 Compatibility
 
 All technology choices must be verified for ARM64 compatibility and performance.

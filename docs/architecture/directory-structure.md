@@ -42,6 +42,7 @@ Passnux/
 │   │   └── i18n/en/    # 英文翻译
 │   └── faq/
 │       └── i18n/en/    # 英文翻译
+├── new-api/            # 上游 AI 网关（new-api 子模块）
 ├── src/                # 源代码
 │   ├── frontend/
 │   └── backend/

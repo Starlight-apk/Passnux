@@ -47,11 +47,17 @@ Content-Type: application/json
 
 ## Supported Models
 
+Models are managed by the upstream [new-api](https://github.com/Calcium-Ion/new-api) gateway, supporting but not limited to:
+
 | Model | Description |
 | :--- | :--- |
 | `deepseek-chat` | DeepSeek chat model |
 | `gpt-3.5-turbo` | OpenAI GPT-3.5 |
+| `gpt-4o` | OpenAI GPT-4o |
 | `qwen-turbo` | Tongyi Qianwen |
+| `claude-3-haiku` | Anthropic Claude 3 |
+
+> 💡 The actual available model list depends on new-api admin configuration. Use `GET /models` to get the real-time list.
 
 ## Streaming Output
 

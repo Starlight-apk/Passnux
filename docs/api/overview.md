@@ -7,6 +7,7 @@
 - **Base URL**: `https://api.passnux.org/v1`
 - **数据格式**: JSON
 - **字符编码**: UTF-8
+- **上游网关**: 请求经 Passnux 后端转发至 [new-api](https://gitcode.com/QuantumNous/new-api) 统一调度
 
 ## 接口列表
 
@@ -14,8 +15,8 @@
 | :--- | :--- | :--- |
 | POST | `/auth/login` | 用户登录 |
 | POST | `/auth/register` | 用户注册 |
-| GET  | `/models` | 获取模型列表 |
-| POST | `/chat/completions` | AI 对话 |
+| GET  | `/models` | 获取模型列表（从 new-api 同步） |
+| POST | `/chat/completions` | AI 对话（经 new-api 转发） |
 | GET  | `/user/profile` | 获取用户信息 |
 
 ## 通用响应格式

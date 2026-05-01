@@ -4,13 +4,13 @@
 
 ## Overall Architecture
 
-Passnux adopts a front-end/back-end separation architecture:
+Passnux adopts a front-end/back-end separation architecture, using [new-api](https://github.com/Calcium-Ion/new-api) as the upstream AI gateway for unified model request routing:
 
 ```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐
-│  Frontend   │────▶│  Backend API │────▶│  AI Models  │
-│  (Web UI)   │◀────│  (Service)   │◀────│  (API GW)   │
-└─────────────┘     └──────────────┘     └─────────────┘
+┌─────────────┐     ┌──────────────┐     ┌──────────────────┐     ┌─────────────┐
+│  Frontend   │────▶│  Backend API │────▶│  new-api         │────▶│  AI Models  │
+│  (Web UI)   │◀────│  (Service)   │◀────│  (AI Gateway)    │     │ (Vendors)   │
+└─────────────┘     └──────────────┘     └──────────────────┘     └─────────────┘
                            │
                     ┌──────┴──────┐
                     │  Database   │
@@ -24,7 +24,7 @@ Passnux adopts a front-end/back-end separation architecture:
 | Frontend | User interface | TBD |
 | Backend | Business logic | TBD |
 | Database | Data persistence | TBD |
-| AI Gateway | Model request routing | TBD |
+| AI Gateway | Model aggregation, load balancing, key management | [new-api](https://github.com/Calcium-Ion/new-api) |
 
 ## Design Principles
 

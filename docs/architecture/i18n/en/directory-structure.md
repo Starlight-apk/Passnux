@@ -42,6 +42,7 @@ Passnux/
 │   │   └── i18n/en/    # English translations
 │   └── faq/
 │       └── i18n/en/    # English translations
+├── new-api/            # Upstream AI gateway (new-api submodule)
 ├── src/                # Source code
 │   ├── frontend/
 │   └── backend/

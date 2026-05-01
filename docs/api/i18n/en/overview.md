@@ -7,6 +7,7 @@
 - **Base URL**: `https://api.passnux.org/v1`
 - **Data Format**: JSON
 - **Character Encoding**: UTF-8
+- **Upstream Gateway**: Requests are forwarded through Passnux backend to [new-api](https://github.com/Calcium-Ion/new-api) for unified scheduling
 
 ## Endpoints
 
@@ -14,8 +15,8 @@
 | :--- | :--- | :--- |
 | POST | `/auth/login` | User login |
 | POST | `/auth/register` | User registration |
-| GET  | `/models` | List available models |
-| POST | `/chat/completions` | AI chat completion |
+| GET  | `/models` | List available models (synced from new-api) |
+| POST | `/chat/completions` | AI chat completion (via new-api) |
 | GET  | `/user/profile` | Get user profile |
 
 ## Common Response Format
