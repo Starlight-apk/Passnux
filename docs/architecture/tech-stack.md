@@ -2,6 +2,8 @@
 
 # 技术选型
 
+> Passnux **不自研 AI 模型调用**，所有 AI 能力由上游 new-api 网关提供。Passnux 专注前端界面、API 代理、用户管理与额度分发。
+
 ## 技术栈决策
 
 ### 前端
@@ -24,10 +26,10 @@
 | 主库 | 待定 | 考虑 PostgreSQL |
 | 缓存 | 待定 | 考虑 Redis |
 
-### AI 网关
+### AI 网关（上游）
 | 方案 | 状态 | 说明 |
 | :--- | :--- | :--- |
-| 上游网关 | ✅ 已确定 | [new-api](https://gitcode.com/QuantumNous/new-api) — 多模型聚合、负载均衡、密钥管理、额度控制 |
+| 上游网关 | ✅ 已确定 | [new-api](https://gitcode.com/QuantumNous/new-api) — 多模型聚合、负载均衡、密钥管理、额度控制。Passnux 通过 API 代理转发至此网关 |
 
 ## ARM64 兼容性
 

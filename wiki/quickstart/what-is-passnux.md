@@ -2,15 +2,15 @@
 
 # 什么是 Passnux？
 
-Passnux 是一个**免费**的 AI 公益服务平台，基于 [new-api](https://gitcode.com/QuantumNous/new-api) 上游网关构建。
+Passnux 是一个**免费**的 AI 公益服务平台。AI 能力由上游 [new-api](https://gitcode.com/QuantumNous/new-api) 网关提供，Passnux 自身专注于提供**好用的前端界面**和**用户管理服务**。
 
 ## 核心特点
 
 - **完全免费** — 无需付费，注册即用
-- **多模型支持** — 通过 new-api 集成多种主流 AI 模型
+- **多模型支持** — AI 模型由 new-api 统一管理，Passnux 提供便捷的切换界面
 - **ARM64 优化** — 在国产化设备上流畅运行
 - **隐私安全** — 对话数据加密传输
-- **稳定可靠** — new-api 提供负载均衡，保障服务可用性
+- **额度管理** — Passnux 负责用户额度分发，公平使用 AI 资源
 
 ## 适用人群
 

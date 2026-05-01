@@ -2,6 +2,8 @@
 
 # Tech Stack
 
+> Passnux **does not implement its own AI model invocation**. All AI capabilities are provided by the upstream new-api gateway. Passnux focuses on the frontend UI, API proxy, user management, and quota distribution.
+
 ## Technology Decisions
 
 ### Frontend
@@ -24,10 +26,10 @@
 | Primary DB | TBD | Considering PostgreSQL |
 | Cache | TBD | Considering Redis |
 
-### AI Gateway
+### AI Gateway (Upstream)
 | Option | Status | Description |
 | :--- | :--- | :--- |
-| Upstream Gateway | ✅ Confirmed | [new-api](https://github.com/Calcium-Ion/new-api) — Multi-model aggregation, load balancing, key management, quota control |
+| Upstream Gateway | ✅ Confirmed | [new-api](https://github.com/Calcium-Ion/new-api) — Multi-model aggregation, load balancing, key management, quota control. Passnux forwards AI requests to this gateway via API proxy |
 
 ## ARM64 Compatibility
 

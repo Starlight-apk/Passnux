@@ -2,7 +2,9 @@
 
 # 模型调用接口
 
-## AI 对话
+> Passnux **不自研 AI 模型调用**。此接口为透传代理，所有请求转发至上游 [new-api](https://gitcode.com/QuantumNous/new-api) 网关处理。
+
+## AI 对话（代理转发）
 
 ```
 POST /v1/chat/completions
@@ -26,24 +28,8 @@ Content-Type: application/json
 ```
 
 **响应：**
-```json
-{
-  "code": 0,
-  "data": {
-    "id": "chat-xxxx",
-    "model": "deepseek-chat",
-    "choices": [
-      {
-        "index": 0,
-        "message": {
-          "role": "assistant",
-          "content": "你好！有什么可以帮助你的吗？"
-        }
-      }
-    ]
-  }
-}
-```
+
+响应格式与 OpenAI API 兼容，由 new-api 返回。
 
 ## 支持模型
 
@@ -61,4 +47,4 @@ Content-Type: application/json
 
 ## 流式输出
 
-设置 `stream: true` 即可启用 SSE 流式输出。
+设置 `stream: true` 即可启用 SSE 流式输出（由 new-api 原生支持）。

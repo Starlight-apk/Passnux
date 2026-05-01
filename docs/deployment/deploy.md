@@ -2,6 +2,8 @@
 
 # 部署指南
 
+> Passnux 依赖上游 new-api 网关提供 AI 能力，部署时需先部署 new-api，再部署 Passnux。
+
 ## 生产环境要求
 
 - Debian 13 (trixie) ARM64
@@ -24,7 +26,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3 python3-pip nginx golang-go
 ```
 
-### 3. 部署 new-api 上游网关
+### 3. 部署 new-api 上游网关（必须先部署）
 
 ```bash
 # 克隆 new-api 仓库
@@ -39,6 +41,7 @@ sudo systemctl enable new-api
 sudo systemctl start new-api
 ```
 
+> 在 new-api 管理后台配置 AI 模型密钥后，Passnux 才能正常使用 AI 能力。
 > 详细配置请参考 [new-api 官方文档](https://gitcode.com/QuantumNous/new-api)。
 
 ### 4. 配置反向代理

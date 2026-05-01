@@ -2,7 +2,9 @@
 
 # Model Inference API
 
-## AI Chat
+> Passnux **does not implement its own AI model invocation**. This endpoint is a transparent proxy — all requests are forwarded to the upstream [new-api](https://github.com/Calcium-Ion/new-api) gateway.
+
+## AI Chat (Proxy)
 
 ```
 POST /v1/chat/completions
@@ -26,24 +28,8 @@ Content-Type: application/json
 ```
 
 **Response:**
-```json
-{
-  "code": 0,
-  "data": {
-    "id": "chat-xxxx",
-    "model": "deepseek-chat",
-    "choices": [
-      {
-        "index": 0,
-        "message": {
-          "role": "assistant",
-          "content": "Hello! How can I help you?"
-        }
-      }
-    ]
-  }
-}
-```
+
+Response format is OpenAI API compatible, returned by new-api.
 
 ## Supported Models
 
@@ -61,4 +47,4 @@ Models are managed by the upstream [new-api](https://github.com/Calcium-Ion/new-
 
 ## Streaming Output
 
-Set `stream: true` to enable SSE streaming output.
+Set `stream: true` to enable SSE streaming output (natively supported by new-api).

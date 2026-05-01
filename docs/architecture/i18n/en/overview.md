@@ -4,27 +4,30 @@
 
 ## Overall Architecture
 
-Passnux adopts a front-end/back-end separation architecture, using [new-api](https://github.com/Calcium-Ion/new-api) as the upstream AI gateway for unified model request routing:
+Passnux adopts a front-end/back-end separation architecture. AI capabilities are provided by the upstream [new-api](https://github.com/Calcium-Ion/new-api) gateway. Passnux itself **does not directly call any AI models** — it only provides the frontend UI, API proxy forwarding, user management, and quota distribution:
 
 ```
 ┌─────────────┐     ┌──────────────┐     ┌──────────────────┐     ┌─────────────┐
-│  Frontend   │────▶│  Backend API │────▶│  new-api         │────▶│  AI Models  │
-│  (Web UI)   │◀────│  (Service)   │◀────│  (AI Gateway)    │     │ (Vendors)   │
+│  Frontend   │────▶│  Passnux     │────▶│  new-api (Upstr) │────▶│  AI Models  │
+│  (Web UI)   │◀────│  API Proxy   │◀────│  AI Gateway      │     │ (Vendors)   │
 └─────────────┘     └──────────────┘     └──────────────────┘     └─────────────┘
-                           │
-                    ┌──────┴──────┐
-                    │  Database   │
-                    └─────────────┘
+                     │    │    │
+              ┌──────┘    │    └──────┐
+              ▼           ▼           ▼
+         ┌────────┐ ┌──────────┐ ┌────────┐
+         │  User  │ │  Quota   │ │ Chat   │
+         │  Mgmt  │ │  Distr.  │ │ History│
+         └────────┘ └──────────┘ └────────┘
 ```
 
 ## Core Components
 
 | Component | Responsibility | Technology |
 | :--- | :--- | :--- |
-| Frontend | User interface | TBD |
-| Backend | Business logic | TBD |
-| Database | Data persistence | TBD |
-| AI Gateway | Model aggregation, load balancing, key management | [new-api](https://github.com/Calcium-Ion/new-api) |
+| Frontend | User interface (AI chat, model switching) | TBD |
+| Backend | API proxy, user management, quota distribution | TBD |
+| Database | User data, chat history, quota records | TBD |
+| AI Gateway (Upstream) | Model aggregation, load balancing, key management | [new-api](https://github.com/Calcium-Ion/new-api) |
 
 ## Design Principles
 

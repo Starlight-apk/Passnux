@@ -2,6 +2,8 @@
 
 # Deployment Guide
 
+> Passnux relies on the upstream new-api gateway for AI capabilities. You must deploy new-api first, then Passnux.
+
 ## Production Requirements
 
 - Debian 13 (trixie) ARM64
@@ -24,7 +26,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3 python3-pip nginx golang-go
 ```
 
-### 3. Deploy new-api Upstream Gateway
+### 3. Deploy new-api Upstream Gateway (must be deployed first)
 
 ```bash
 # Clone new-api repository
@@ -39,6 +41,7 @@ sudo systemctl enable new-api
 sudo systemctl start new-api
 ```
 
+> After configuring AI model keys in the new-api admin panel, Passnux will be able to use AI capabilities.
 > For detailed configuration, refer to the [new-api documentation](https://github.com/Calcium-Ion/new-api).
 
 ### 4. Configure Reverse Proxy

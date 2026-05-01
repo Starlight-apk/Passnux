@@ -2,6 +2,8 @@
 
 # Environment Configuration
 
+> Passnux does not hold any AI model keys itself. All AI requests are forwarded to the upstream new-api gateway via `NEW_API_BASE_URL`.
+
 ## Configuration Items
 
 | Variable | Description | Default |
@@ -12,8 +14,8 @@
 | `REDIS_URL` | Redis connection | `redis://localhost:6379` |
 | `JWT_SECRET` | JWT secret key | (Required) |
 | `JWT_EXPIRES` | Token expiration time | `86400` |
-| `NEW_API_BASE_URL` | new-api upstream address | `http://localhost:3000` |
-| `NEW_API_KEY` | new-api admin key | (Required) |
+| `NEW_API_BASE_URL` | new-api upstream address (Passnux forwards AI requests here) | `http://localhost:3000` |
+| `NEW_API_KEY` | new-api admin key (for syncing model list, etc.) | (Required) |
 | `LOG_LEVEL` | Log level | `INFO` |
 
 ## Configuration File

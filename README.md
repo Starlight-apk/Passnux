@@ -4,7 +4,7 @@
 
 ## 🌟 项目简介
 
-Passnux 是一个运行在 **ARM64 Linux** 架构上的 AI 公益服务平台。基于 [new-api](https://gitcode.com/QuantumNous/new-api) 构建上游 AI 网关，致力于让每个人都能免费、便捷地使用人工智能技术，打破算力壁垒，让 AI 真正普惠大众。
+Passnux 是一个运行在 **ARM64 Linux** 架构上的 AI 公益服务平台。AI 能力由上游 [new-api](https://gitcode.com/QuantumNous/new-api) 网关提供，Passnux 专注于提供**前端界面、API 代理、用户管理与额度分发**，致力于让每个人都能免费、便捷地使用人工智能技术。
 
 ### ✨ 核心理念
 
@@ -12,13 +12,13 @@ Passnux 是一个运行在 **ARM64 Linux** 架构上的 AI 公益服务平台。
 - 🐧 **ARM64 优先** — 专为国产化、信创环境优化
 - 🔓 **开源开放** — 代码透明，社区共建
 - 🌐 **人人可用** — 降低 AI 使用门槛
-- 🔗 **new-api 驱动** — 基于 new-api 实现多模型聚合与负载均衡
+- 🔗 **new-api 驱动** — AI 能力由 new-api 上游提供，Passnux 专注前端与用户管理
 
 ## 🎯 项目目标
 
-- [ ] 搭建 AI 对话服务（基于 new-api 上游网关）
-- [ ] 提供多模型聚合访问（由 new-api 统一调度）
-- [ ] 实现用户友好的 Web 界面
+- [ ] 搭建前端 Web 界面（AI 对话交互）
+- [ ] 实现 API 代理层（对接 new-api 上游）
+- [ ] 实现用户注册、登录与额度分发管理
 - [ ] 支持 ARM64 架构高效运行
 - [ ] 持续集成与部署
 
