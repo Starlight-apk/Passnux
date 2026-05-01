@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](chat.md) | [English](i18n/en/chat.md)
+
 # AI 对话功能
 
 ## 对话模式

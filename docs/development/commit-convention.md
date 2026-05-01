@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](commit-convention.md) | [English](i18n/en/commit-convention.md)
+
 # Git 提交规范
 
 ## 提交信息格式

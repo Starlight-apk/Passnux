@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](setup.md) | [English](i18n/en/setup.md)
+
 # 环境搭建
 
 ## 前置要求

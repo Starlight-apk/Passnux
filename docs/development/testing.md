@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](testing.md) | [English](i18n/en/testing.md)
+
 # 测试指南
 
 ## 测试策略

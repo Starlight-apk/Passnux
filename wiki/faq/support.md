@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](support.md) | [English](i18n/en/support.md)
+
 # 技术支持
 
 ## 遇到问题怎么办？

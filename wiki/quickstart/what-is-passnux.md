@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](what-is-passnux.md) | [English](i18n/en/what-is-passnux.md)
+
 # 什么是 Passnux？
 
 Passnux 是一个**免费**的 AI 公益服务平台。

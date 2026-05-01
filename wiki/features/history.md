@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](history.md) | [English](i18n/en/history.md)
+
 # 对话历史
 
 ## 查看历史

@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](index.md) | [English](i18n/en/index.md)
+
 # Passnux 用户指南
 
 > 欢迎使用 Passnux！本文档帮助你快速上手。

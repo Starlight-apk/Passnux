@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](account.md) | [English](i18n/en/account.md)
+
 # 账户常见问题
 
 ## 如何注册？

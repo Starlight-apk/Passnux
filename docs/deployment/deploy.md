@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](deploy.md) | [English](i18n/en/deploy.md)
+
 # 部署指南
 
 ## 生产环境要求

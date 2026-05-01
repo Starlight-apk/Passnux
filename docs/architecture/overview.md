@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](overview.md) | [English](i18n/en/overview.md)
+
 # 项目架构概览
 
 ## 整体架构

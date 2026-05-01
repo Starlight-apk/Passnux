@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](coding-standards.md) | [English](i18n/en/coding-standards.md)
+
 # 编码规范
 
 ## 通用原则

@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](monitoring.md) | [English](i18n/en/monitoring.md)
+
 # 监控告警
 
 ## 监控指标

@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](models.md) | [English](i18n/en/models.md)
+
 # 多模型切换
 
 ## 支持模型

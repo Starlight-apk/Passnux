@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](authentication.md) | [English](i18n/en/authentication.md)
+
 # 认证鉴权
 
 ## 认证方式

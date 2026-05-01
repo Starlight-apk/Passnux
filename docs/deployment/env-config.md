@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](env-config.md) | [English](i18n/en/env-config.md)
+
 # 环境变量配置
 
 ## 配置项列表

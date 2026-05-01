@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](tech-stack.md) | [English](i18n/en/tech-stack.md)
+
 # 技术选型
 
 ## 技术栈决策

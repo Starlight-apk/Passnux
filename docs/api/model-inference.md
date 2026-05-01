@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](model-inference.md) | [English](i18n/en/model-inference.md)
+
 # 模型调用接口
 
 ## AI 对话

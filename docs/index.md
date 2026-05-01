@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](index.md) | [English](i18n/en/index.md)
+
 # Passnux 开发文档
 
 > 本文档面向 Passnux 项目的贡献者和开发者。

@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](usage.md) | [English](i18n/en/usage.md)
+
 # 使用常见问题
 
 ## AI 回答不准确怎么办？

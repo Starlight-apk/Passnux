@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](register.md) | [English](i18n/en/register.md)
+
 # 注册与登录
 
 ## 注册账号

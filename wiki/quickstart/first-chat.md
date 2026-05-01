@@ -1,3 +1,5 @@
+> 🌐 **语言 / Language**: [中文](first-chat.md) | [English](i18n/en/first-chat.md)
+
 # 开始第一次对话
 
 ## 进入对话
